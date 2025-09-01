@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:ital,wght@0,100..900;1,100..900&family=Genos:ital,wght@0,100..900;1,100..900&family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=WDXL+Lubrifont+TC&display=swap');
+body{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    margin: 0;
+}
+
+/*----------Header----------*/
+.head-main{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+   -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    border-radius: 0 0 20px 20px;
+    width: 93vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.header-left{
+    margin: 0%;
+
+    display: flex;
+    width: 23%;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Goldman", sans-serif;
+    letter-spacing: 0.5px;
+}
+.svg-logo{
+    height: 100px;
+    width: 100px;
+    padding: 0%;
+}
+.head-h1{
+    font-size: x-large;
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 2px;
+    margin-top: 5%;
+}
+
+
+
+.a-head{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/*---------Home-Content----------*/
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.home-text{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    text-align: left;
+}
+.home-text1{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+.home-text2{
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.my-img{
+    
+    border: 1px solid white;
+    width: 500px; height: 450px;
+    border-radius: 80%;
+}
+.home-img-div{
+    margin-top: 5%;
+}
+
+.home-text3{
+      font-family: "Genos", sans-serif;
+      font-weight: lighter;
+}
+.home-text4{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.home-text5{
+    width: 30%;
+    display: flex;
+    font-family:   "Exo", sans-serif;;
+    justify-content: space-around;
+}
+.GL{
+    padding: 5px;
+    font-size: 25px;
+    background-color: rgb(52, 53, 53);
+    color: white;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+.home-but1{
+    text-align: center;
+}
+.home-but2{
+    text-align: center;
+}
+.home-text6, .home-text7, .home-text8{
+
+    font-weight: lighter;
+    font-family:"Exo", sans-serif;;
+}
+
+
+/*--------education------*/
+
+.education{
+    height: 100vh;
+    background-color: rgb(37, 40, 40);
+}
+.main-txt{
+    padding-top: 100px;
+    margin-left: 100px;
+    font-family: "Goldman", sans-serif;
+    padding-bottom: 0px;
+}
+.edu-content{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 480px);
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+
+}
+
+.edu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 450px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    letter-spacing: 1px;
+}
+.ed1{
+    opacity: 90%;
+}
+.ed2{
+    font-weight: lighter;
+    font-size: 25px;
+    opacity: 75%;
+}
+.ed3{
+    font-weight: lighter;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+/*----Contact Me---------*/
+
+
+.contactme{
+    height: 100vh;
+}
+.left-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cnt-txt2{
+    opacity: 75%;
+    margin-left: 130px;
+    font-size: 35px;
+    font-weight: lighter;
+    font-family: "Genos", sans-serif;
+}
+
+.cnt-left{
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+.ccnt{
+    opacity: 90%;
+    font-family: "Goldman", sans-serif;
+    font-weight: lighter;
+}
+.ccna{
+    font-size: 25px;
+    opacity: 60%;
+    padding-left: 35px;
+    font-family: "Genos", sans-serif;
+    letter-spacing: 1px;
+}
+.cnt-right{
+    width: 50%;
+    font-family: "Genos", sans-serif;
+    letter-spacing: 1px;
+}
+.right-cont{
+    display: flex;
+    flex-direction: column;
+}
+.cnt-form{
+    border: 1px solid rgb(57, 57, 57);
+    width: 80%;
+    border-radius: 15px;
+}
+.c1t, input{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+    font-size: 19px;
+}
+
+input,textarea{
+    border: 1px solid rgb(57, 57, 57);
+    background: transparent;
+    border-radius: 10px;
+}
+.rght-txt1{
+    text-align: center;
+    width: 80%;
+}
+.button-submit{
+    border: none;
+    background-color: rgb(73, 121, 164);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-left: 40%;
+    font-family: "Genos", sans-serif;
+    color: white;
+    font-size: 20px;
+}
