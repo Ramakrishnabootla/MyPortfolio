@@ -430,3 +430,368 @@ input,textarea{
     color: white;
     font-size: 20px;
 }
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RamaKrishna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="head-main">
+    <div class="header-left">
+      <svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="240 185 150 100" aria-hidden="true">
+        <!-- same paths as before -->
+        <path fill="#fff" d="M255.934113,192.825897C269.895050,191.689453 283.820801,190.473602 297.381073,193.120529C318.372009,197.217850 326.190308,223.165070 311.801422,239.135971C311.144531,239.865128 310.540344,240.641830 309.565186,241.812164C319.475067,254.059967 329.342865,266.255768 339.357025,278.632446C331.578522,281.681549 326.188080,280.527832 321.865753,275.240692C311.763702,262.883759 301.698639,250.496582 291.710693,238.234711C292.555023,236.161545 294.269196,236.248016 295.554901,235.699081C302.585815,232.697083 307.222015,225.293869 306.099945,218.749222C304.834259,211.366837 297.192291,204.529678 289.778870,204.346008C284.118347,204.205795 278.370270,203.684677 272.806671,204.425644C263.482605,205.667419 259.357666,200.014847 255.934113,192.825897z"/>
+        <path fill="#fff" d="M340.718994,214.740738C345.570374,208.784149 350.207123,203.110947 354.792847,197.396851C359.478516,191.558319 364.729584,190.225800 372.823639,193.297867C369.786133,197.177536 366.919495,200.962357 363.923370,204.641769C356.144073,214.195160 348.396149,223.776901 340.436127,233.178375C338.281281,235.723404 338.263123,237.472153 340.367920,240.014282C350.030029,251.683853 359.533478,263.484894 369.072662,275.255920C369.977203,276.372101 371.354462,277.259125 371.225952,278.982391C363.765472,281.780762 358.519196,280.445404 353.792206,274.650513C344.739868,263.553040 335.763275,252.390945 326.530060,241.445618C323.621124,237.997269 323.548706,235.379776 326.538239,231.990234C331.380402,226.500183 335.853241,220.684402 340.718994,214.740738z"/>
+        <path fill="#fff" d="M300.881592,280.043518C295.873871,280.679169 292.743011,278.833038 289.871094,275.162292C281.576172,264.560028 272.872559,254.278259 264.393768,243.818466C262.873291,241.942719 260.868805,240.315842 260.375397,237.727356C268.550964,234.990433 273.075806,236.241638 278.134491,242.437943C287.382996,253.766312 296.670837,265.062592 305.930420,276.381927C306.437958,277.002350 306.837372,277.711212 307.363586,278.492432C305.617737,280.758026 303.303101,279.785370 300.881592,280.043518z"/>
+      </svg>
+      <h1 class="head-h1">RamaKrishna</h1>
+    </div>
+
+    <button class="menu-btn" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <nav id="site-nav" class="head-buttons" aria-label="Main navigation">
+      <a class="a-head a-head-home" href="#home">Home</a>
+      <a class="a-head a-head-programs" href="#education">Education</a>
+      <a class="a-head a-head-projects" href="#projects">Projects</a>
+      <a class="a-head a-head-achivements" href="#achivements">Achivements</a>
+      <a class="a-head a-head-contactme" href="#contactme">Contact Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <div class="home-text">
+        <h1 class="home-text1">Hi, I am</h1>
+        <h2 class="home-text2">RamaKrishna Bootla</h2>
+        <p class="home-text3 asdf" >B.Tech CSE(AIML) Student &diamond; Full Stack & AI Developer</p>
+
+        <p class="home-text6 asdf">✉️ : <a href="mailto:bootlaramakrsihna0@gmail.com">bootlaramakrsihna0@gmail.com</a></p>
+        <p class="home-text7 asdf">📞 : +91 96031 25954</p>
+        <p class="home-text8 asdf">📍 : Hyderabad, Telangana, India</p>
+
+        <div class="home-text5 asdf">
+          <a class="GL home-but1" href="https://github.com/Ramakrishnabootla" target="_blank" rel="noopener">GitHub</a>
+          <a class="GL home-but2" href="https://www.linkedin.com/in/ramakrishna-bootla-7ba1b5338/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="home-img-div">
+        <img class="my-img" src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740&q=80" alt="Profile photo of RamaKrishna">
+      </div>
+    </section>
+
+    <section id="education" class="education">
+      <h2 class="main-txt edu-text1">Education</h2>
+
+      <div class="edu-content">
+        <div class="edu btech">
+          <h3 class="ed1 bt-name1">CMR TECHNICAL CAMPUS</h3>
+          <p class="ed2 bt-name2">B.Tech in CSE(AIML)</p>
+          <p class="ed3 bt-name3">(2024-2027)</p>
+        </div>
+
+        <div class="edu Diploma">
+          <h3 class="ed1 dip-name1">Jyothishmathi Institute of Tech & Sci</h3>
+          <p class="ed2 dip-name2">Diploma in EEE</p>
+          <p class="ed3 dip-name3">(2021-2024)</p>
+        </div>
+
+        <div class="edu School">
+          <h3 class="ed1 scl-name1">ST. VINCENT PALLOTTI SCHOOL</h3>
+          <p class="ed2 scl-name2">High School</p>
+          <p class="ed3 scl-name3">(2021)</p>
+        </div>
+
+        <div class="edu courses">
+          <h3 class="ed1 crs-name1">Courses</h3>
+          <p class="ed2 crs-name2">HTML, CSS, React, Java, Python, Data Structures, Automation (N8N)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactme" class="contactme">
+      <h2 class="main-txt cnt--head-text1">Contact Me</h2>
+      <p class="cnt-txt2">Have a project in mind? Let’s build it together. Open to hiring and collaborations.</p>
+
+      <div class="left-right">
+        <aside class="cnt-left">
+          <h3 class="ccnt">
+            <!-- icons kept -->
+            LinkedIn
+          </h3>
+          <a class="ccna ccna1" href="https://www.linkedin.com/in/ramakrishna-bootla-7ba1b5338/">ramakrishna-bootla-7ba1b5338</a>
+
+          <h3 class="ccnt">✉️ Mail</h3>
+          <a class="ccna ccna2" href="mailto:bootlaramakrsihna0@gmail.com">bootlaramakrishna0@gmail.com</a>
+
+          <h3 class="ccnt">📞 Phone</h3>
+          <p class="ccna ccna3">+91 96031 25954</p>
+
+          <h3 class="ccnt">GitHub</h3>
+          <a class="ccna ccna4" href="https://github.com/Ramakrishnabootla">Ramakrishnabootla</a>
+        </aside>
+
+        <div class="cnt-right">
+          <form action="mailto:bootlaramakrsihna0@gmail.com" class="cnt-form">
+            <label for="name" class="c1t name1">Name
+              <input type="text" name="name" id="name" class="c1t name2" placeholder="Type Your Name" />
+            </label>
+
+            <label for="email" class="c1t email1">Email
+              <input type="email" name="email" id="email" class="c1t email2" placeholder="your@example.com" />
+            </label>
+
+            <label for="text1" class="c1t text1">Message
+              <textarea name="iptext" rows="5" id="text1" class="c1t text2" placeholder="Hi, Rama I would Like to...."></textarea>
+            </label>
+
+            <button type="submit" class="button-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // simple accessible nav toggle
+    (function () {
+      const btn = document.querySelector('.menu-btn');
+      const nav = document.getElementById('site-nav');
+
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+
+      // close nav on link click (mobile)
+      nav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          nav.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+
+
+
+stylesheet
+
+/* Responsive stylesheet (replace your old style.css with this) */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:ital,wght@0,100..900;1,100..900&family=Genos:ital,wght@0,100..900;1,100..900&family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+  --bg:#000;
+  --muted:#2b2b2b;
+  --accent:#4979a4;
+  --white:#fff;
+  --radius:12px;
+  --gap:1.25rem;
+}
+
+* { box-sizing: border-box; }
+html,body{ height:100%; margin:0; padding:0; background:var(--bg); color:var(--white); font-family: Inter, system-ui, sans-serif; -webkit-font-smoothing:antialiased;}
+a{ color:var(--white); text-decoration:none; }
+h1,h2,h3,p{ margin:0 0 0.5rem 0; }
+
+/* ---------- Header ---------- */
+.head-main{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0.6rem 4%;
+  gap:var(--gap);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background:linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35));
+  border-bottom-left-radius:16px;
+  border-bottom-right-radius:16px;
+  z-index:40;
+}
+
+/* header left */
+.header-left{ display:flex; align-items:center; gap:0.75rem; min-width:0;}
+.svg-logo{ width:48px; height:48px; flex:0 0 48px; }
+.head-h1{ font-family: Audiowide, sans-serif; font-size:clamp(1rem, 2.5vw, 1.25rem); letter-spacing:1px; }
+
+/* nav (desktop) */
+.head-buttons{
+  display:flex;
+  gap:0.5rem;
+  align-items:center;
+  justify-content:flex-end;
+  transition: max-height 0.28s ease;
+}
+
+.a-head{
+  display:inline-block;
+  padding:0.45rem 0.9rem;
+  border-radius:999px;
+  background:transparent;
+  font-size:0.95rem;
+  font-family:Goldman, sans-serif;
+  border:1px solid rgba(255,255,255,0.06);
+}
+
+/* menu button for mobile */
+.menu-btn{
+  display:none;
+  background:transparent;
+  border:0;
+  gap:6px;
+  padding:6px;
+  align-items:center;
+}
+.menu-btn .bar{
+  display:block;
+  width:22px;
+  height:2px;
+  background:var(--white);
+  margin:3px 0;
+  transition:transform .25s ease;
+}
+
+/* ---------- Home ---------- */
+.home{
+  display:flex;
+  gap:2rem;
+  align-items:center;
+  justify-content:space-between;
+  padding:6.5rem 6% 4rem; /* top padding to account for fixed header */
+  min-height:calc(100vh - 6.5rem);
+}
+
+.home-text{
+  flex:1 1 380px;
+  max-width:65ch;
+}
+
+.home-text1{ font-size:clamp(1.25rem, 3.6vw, 2rem); font-weight:700; }
+.home-text2{ font-family:Audiowide, sans-serif; font-size:clamp(1.6rem, 5vw, 2.8rem); letter-spacing:1px; margin-top:0.25rem; }
+.home-text3{ font-family:Genos, sans-serif; opacity:0.9; margin-top:0.75rem; font-size:30px; color:#dcdcdc; }
+
+.home-text6, .home-text7, .home-text8 { margin-top:0.6rem; font-size:23px; color:#dddddd; }
+.home-text5{ margin-top:1rem; display:flex; gap:0.75rem; flex-wrap:wrap; }
+
+.GL{
+  padding:0.5rem 0.85rem;
+  font-size:1rem;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:10px;
+}
+
+/* image container */
+.home-img-div{ flex:0 0 320px; display:flex; align-items:center; justify-content:center; }
+.my-img{
+  width:min(320px, 40vw);
+  height:auto;
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+
+/* ---------- Education ---------- */
+.education{ background:var(--muted); padding:3.5rem 6% 3.5rem; }
+.main-txt{ font-family:Goldman, sans-serif; margin-bottom:1rem; font-size:clamp(1.25rem,2.6vw,1.6rem); color:white; }
+
+.edu-content{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:1.25rem;
+  align-items:start;
+}
+
+.edu{
+  padding:1rem;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  text-align:center;
+}
+.ed1{ font-weight:700; font-size:1.05rem; }
+.ed2{ opacity:0.9; font-size:0.95rem; margin-top:0.25rem; }
+.ed3{ opacity:0.7; font-size:0.9rem; }
+
+/* ---------- Contact ---------- */
+.contactme{ padding:3.5rem 6% 6rem; }
+.cnt-txt2{ font-size:clamp(1rem,1.8vw,1.2rem); color:#d7d7d7; margin-bottom:1rem; }
+
+.left-right{
+  display:flex;
+  gap:1.5rem;
+  align-items:flex-start;
+  justify-content:space-between;
+}
+
+/* left contact */
+.cnt-left{ flex:0 0 320px; padding:1rem; }
+.ccnt{ font-family:Goldman, sans-serif; font-size:1rem; margin-bottom:0.25rem; }
+.ccna{ display:inline-block; color:#e6eef8; margin-bottom:0.75rem; }
+
+/* right form */
+.cnt-right{ flex:1 1 360px; }
+.cnt-form{ padding:1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.06); background:transparent; }
+.c1t, input, textarea{ display:block; width:100%; margin:0.5rem 0; font-size:0.95rem; color:var(--white); }
+input,textarea{ background:transparent; border:1px solid rgba(255,255,255,0.08); padding:0.6rem; border-radius:8px; resize:vertical; }
+
+.button-submit{
+  display:inline-block;
+  border:none;
+  background:var(--accent);
+  color:var(--white);
+  padding:0.6rem 1rem;
+  border-radius:8px;
+  font-size:1rem;
+  margin-top:0.5rem;
+  cursor:pointer;
+}
+
+/* ---------- Utilities ---------- */
+@media (max-width: 980px){
+  .home{ padding-top:7rem; gap:1rem; flex-direction:column-reverse; align-items:center; min-height:auto; }
+  .home-img-div{ margin-bottom:0.75rem; }
+  .main-txt, .cnt-txt2{ padding:0 0 0; }
+
+  /* header adjustments */
+  .menu-btn{ display:flex; }
+  .head-buttons{ position:fixed; top:64px; right:0; background:linear-gradient(180deg, rgba(0,0,0,0.95), rgba(0,0,0,0.95)); flex-direction:column; padding:1rem; gap:0.5rem; border-bottom-left-radius:12px; transform:translateX(110%); transition:transform .22s ease; z-index:45; min-width:200px; }
+  .head-buttons.open{ transform:translateX(0%); }
+
+  .a-head{ width:100%; text-align:center; padding:0.8rem 1rem; border-radius:8px; }
+
+  .left-right{ flex-direction:column; }
+  .cnt-left{ width:100%; }
+  .cnt-right{ width:100%; }
+
+  .home-text{ text-align:center; }
+}
+
+@media (max-width: 600px){
+  .head-main{ padding:0.6rem 3%; }
+  .home-text2{ font-size:clamp(1.2rem,6vw,1.6rem); }
+  .GL{ font-size:0.95rem; padding:0.5rem 0.75rem; }
+  .edu-content{ grid-template-columns:1fr; }
+  .svg-logo{ width:40px; height:40px; }
+  .head-h1{ font-size:1rem; }
+  .my-img{ width:44vw; max-width:220px; }
+  .home{ padding-top:6.5rem; }
+}

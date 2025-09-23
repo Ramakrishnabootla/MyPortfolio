@@ -1,4 +1,5 @@
 /* Responsive stylesheet (replace your old style.css with this) */
+/* -- (keep the same font imports and root vars as before) -- */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:ital,wght@0,100..900;1,100..900&family=Genos:ital,wght@0,100..900;1,100..900&family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root{
@@ -93,9 +94,9 @@ h1,h2,h3,p{ margin:0 0 0.5rem 0; }
 
 .home-text1{ font-size:clamp(1.25rem, 3.6vw, 2rem); font-weight:700; }
 .home-text2{ font-family:Audiowide, sans-serif; font-size:clamp(1.6rem, 5vw, 2.8rem); letter-spacing:1px; margin-top:0.25rem; }
-.home-text3{ font-family:Genos, sans-serif; opacity:0.9; margin-top:0.75rem; font-size:30px; color:#dcdcdc; }
+.home-text3{ font-family:Genos, sans-serif; opacity:0.9; margin-top:0.75rem; font-size:clamp(0.95rem, 1.6vw, 1.15rem); color:#dcdcdc; }
 
-.home-text6, .home-text7, .home-text8 { margin-top:0.6rem; font-size:23px; color:#dddddd; }
+.home-text6, .home-text7, .home-text8 { margin-top:0.6rem; font-size:0.95rem; color:#dddddd; }
 .home-text5{ margin-top:1rem; display:flex; gap:0.75rem; flex-wrap:wrap; }
 
 .GL{
@@ -139,6 +140,88 @@ h1,h2,h3,p{ margin:0 0 0.5rem 0; }
 .ed2{ opacity:0.9; font-size:0.95rem; margin-top:0.25rem; }
 .ed3{ opacity:0.7; font-size:0.9rem; }
 
+/* PROJECTS: */
+#projects{padding: 50px;}
+.project-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:1rem; }
+.project-card {
+  background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.06);
+  padding:1rem;
+  border-radius:12px;
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+  min-height:120px;
+  justify-content:space-between;
+}
+
+/* Title */
+.proj-title { font-size:1.02rem; font-weight:700; margin-bottom:0; }
+
+/* two-line description clamp */
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size:0.95rem;
+  color:#d6d6d6;
+  line-height:1.35;
+  margin:0.15rem 0 0.45rem 0;
+}
+
+/* Know More button */
+.know-more {
+  align-self:flex-start;
+  padding:0.5rem 0.8rem;
+  border-radius:8px;
+  border:none;
+  background:var(--accent);
+  color:var(--white);
+  font-weight:600;
+  cursor:pointer;
+  font-size:0.95rem;
+}
+
+/* Modal: full-screen overlay panel */
+.project-modal { position:fixed; inset:0; display:grid; place-items:center; z-index:80; }
+.project-modal[hidden]{ display:none; }
+
+.project-modal__overlay {
+  position:absolute; inset:0; background:rgba(0,0,0,0.7); backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px);
+}
+.prjct1{grid-template-columns: repeat(3, 30%);}
+.project-modal__panel {
+  position:relative;
+  width:min(920px, calc(100% - 40px));
+  max-height:85vh;
+  overflow:auto;
+  background:linear-gradient(180deg, rgba(10,10,10,0.98), rgba(12,12,12,0.98));
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:12px;
+  padding:1rem 1rem 1.25rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* modal header / close */
+.project-modal__header { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:0.5rem; }
+.project-modal__title { font-size:1.25rem; font-weight:700; margin:0; }
+.project-modal__close { background:transparent; border:0; font-size:1.5rem; color:var(--white); cursor:pointer; }
+
+/* modal body */
+.project-modal__body { color:#dcdcdc; font-size:0.97rem; line-height:1.5; padding-top:0.25rem; }
+
+/* footer */
+.project-modal__footer { display:flex; justify-content:flex-end; margin-top:0.75rem; }
+.project-modal__close-btn { padding:0.45rem 0.85rem; border-radius:8px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); color:var(--white); cursor:pointer; }
+
+/* small screens adjustments */
+@media (max-width:600px){
+  .project-modal__panel { width:calc(100% - 20px); padding:0.9rem; border-radius:10px; }
+  .know-more { padding:0.48rem 0.7rem; }
+}
+
 /* ---------- Contact ---------- */
 .contactme{ padding:3.5rem 6% 6rem; }
 .cnt-txt2{ font-size:clamp(1rem,1.8vw,1.2rem); color:#d7d7d7; margin-bottom:1rem; }
@@ -173,7 +256,7 @@ input,textarea{ background:transparent; border:1px solid rgba(255,255,255,0.08);
   cursor:pointer;
 }
 
-/* ---------- Utilities ---------- */
+/* ---------- Utilities / Responsive ---------- */
 @media (max-width: 980px){
   .home{ padding-top:7rem; gap:1rem; flex-direction:column-reverse; align-items:center; min-height:auto; }
   .home-img-div{ margin-bottom:0.75rem; }
@@ -191,6 +274,7 @@ input,textarea{ background:transparent; border:1px solid rgba(255,255,255,0.08);
   .cnt-right{ width:100%; }
 
   .home-text{ text-align:center; }
+  .project-grid{ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 }
 
 @media (max-width: 600px){
@@ -202,4 +286,5 @@ input,textarea{ background:transparent; border:1px solid rgba(255,255,255,0.08);
   .head-h1{ font-size:1rem; }
   .my-img{ width:44vw; max-width:220px; }
   .home{ padding-top:6.5rem; }
+  .project-grid{ grid-template-columns: 1fr; gap:0.85rem; }
 }
