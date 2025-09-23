@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RamaKrishna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head-main">
+        <div class="header-left">
+            <svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="240 185 150 100" width="100%" height="50%">
+            <path fill="#fff" d="M255.934113,192.825897C269.895050,191.689453 283.820801,190.473602 297.381073,193.120529C318.372009,197.217850 326.190308,223.165070 311.801422,239.135971C311.144531,239.865128 310.540344,240.641830 309.565186,241.812164C319.475067,254.059967 329.342865,266.255768 339.357025,278.632446C331.578522,281.681549 326.188080,280.527832 321.865753,275.240692C311.763702,262.883759 301.698639,250.496582 291.710693,238.234711C292.555023,236.161545 294.269196,236.248016 295.554901,235.699081C302.585815,232.697083 307.222015,225.293869 306.099945,218.749222C304.834259,211.366837 297.192291,204.529678 289.778870,204.346008C284.118347,204.205795 278.370270,203.684677 272.806671,204.425644C263.482605,205.667419 259.357666,200.014847 255.934113,192.825897z"/>
+            <path fill="#fff" d="M340.718994,214.740738C345.570374,208.784149 350.207123,203.110947 354.792847,197.396851C359.478516,191.558319 364.729584,190.225800 372.823639,193.297867C369.786133,197.177536 366.919495,200.962357 363.923370,204.641769C356.144073,214.195160 348.396149,223.776901 340.436127,233.178375C338.281281,235.723404 338.263123,237.472153 340.367920,240.014282C350.030029,251.683853 359.533478,263.484894 369.072662,275.255920C369.977203,276.372101 371.354462,277.259125 371.225952,278.982391C363.765472,281.780762 358.519196,280.445404 353.792206,274.650513C344.739868,263.553040 335.763275,252.390945 326.530060,241.445618C323.621124,237.997269 323.548706,235.379776 326.538239,231.990234C331.380402,226.500183 335.853241,220.684402 340.718994,214.740738z"/>
+            <path fill="#fff" d="M300.881592,280.043518C295.873871,280.679169 292.743011,278.833038 289.871094,275.162292C281.576172,264.560028 272.872559,254.278259 264.393768,243.818466C262.873291,241.942719 260.868805,240.315842 260.375397,237.727356C268.550964,234.990433 273.075806,236.241638 278.134491,242.437943C287.382996,253.766312 296.670837,265.062592 305.930420,276.381927C306.437958,277.002350 306.837372,277.711212 307.363586,278.492432C305.617737,280.758026 303.303101,279.785370 300.881592,280.043518z"/>
+            </svg>
+            <h1 class="head-h1">RamaKrishna</h1>
+        </div>
+        <div class="head-buttons">
+            <a class="a-head a-head-home" href="#home">Home</a>
+            <a class="a-head a-head-programs" href="#education">Education</a>
+            <a class="a-head a-head-projects" href="#projects">Projects</a>
+            <a class="a-head a-head-achivements" href="#achivements">Achivements</a>
+            <a class="a-head a-head-contactme" href="#contactme">Contact Me</a> 
+        </div> 
+    </div>
+    <div id="home" class="home">
+        <div class="home-text">
+            <h1 class="home-text1">Hi, I am</h1>
+            <h1 class="home-text2">RamaKrishna Bootla</h1>
+            <h1 class="body home-text3">B.Tech CSE(AIML) Student &diam; Full Stack & AI Developer</h1>
+            <br>
+            <h1 class="home-text6">&#9993; :   <a href="mailto:bootlaramakrsihna0@gmail.com">bootlaramakrsihna0@gmail.com</a></h1>    
+            <h1 class="home-text7">&phone; : +91 96031 25954</h1>
+            <h1 class="home-text8">    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg> : Hyderabad, Telangana, India</h1>
+            <br>
+            <div class="home-text5">
+            <a class="GL home-but1" href="https://github.com/Ramakrishnabootla">GiHub</a>            
+            <a class="GL home-but2" href="https://www.linkedin.com/in/ramakrishna-bootla-7ba1b5338/">LinkedIn</a>  
+            </div>
+               
+        </div>
+        <div class="home-img-div">
+            <img class="my-img" src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        </div>
+    </div>
+    <div id="education" class="education">
+        <div class="edu-head">
+            <h1 class="main-txt edu-text1">Education</h1>
+        </div>
+        <div class="edu-content">
+            <div class="edu btech">
+                <h1 class="ed1 bt-name1">CMR TECHNICAL CAMPUS</h1>
+                <h1 class="ed2 bt-name2">B.Tech in CSE(AIML)</h1>
+                <h1 class="ed3 bt-name3">(2024-2027)</h1>
+            </div>
+            <div class="edu Diploma">
+                <h1 class="ed1 dip-name1">Jyothishmathi Institue of Tech & Sci</h1>
+                <h1 class="ed2 dip-name2">Diploma in EEE</h1>
+                <h1 class="ed3 dip-name3" >(2021-2024)</h1>
+            </div>
+            <div class="edu School">
+                <h1 class="ed1 scl-name1" >ST. VINCENT PALLOTTI SCHOOL</h1>
+                <h1 class="ed2 scl-name2" >High School</h1>
+                <h1 class="ed3 scl-name3" >(2021)</h1>
+            </div>
+            <div class="edu courses">
+                <h1 class="ed1 crs-name1" >Courses</h1>
+                <h1 class="ed2 crs-name2">HTML, CSS, React, Java, Python, DataStructures, Automation(N8N)</h1>
+            </div>
+        </div>
+    </div>
+    <div id="contactme" class="contactme">
+        <div class="cnt-head">
+            <h1 class="main-txt cnt--head-text1">Contact Me</h1>
+            <h1 class="cnt-txt2">Have a project in mind? Let’s build it together. Open to hiring and collaborations.</h1>
+        </div>
+        <div class="left-right">
+            <div class="cnt-left">
+                <h1 class="ccnt cnt-lft-1" >
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24" height="24"
+                    role="img" aria-label="LinkedIn"
+                    fill="currentColor">
+                    <title>LinkedIn</title>
+                    <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0zM6.814 20.452H3.861V9h2.953v11.452zM5.337 7.433c-1.144 0-2.068-.926-2.068-2.067 0-1.141.924-2.066 2.068-2.066s2.068.925 2.068 2.066c0 1.141-.924 2.067-2.068 2.067zM20.447 20.452h-3.554V14.83c0-1.341-.027-3.065-1.868-3.065-1.869 0-2.154 1.46-2.154 2.968v5.719H9.316V9h3.414v1.561h.049c.476-.9 1.637-1.848 3.366-1.848 3.598 0 4.264 2.368 4.264 5.455v6.284z"/>
+                    </svg> 
+                LinkedIn</h1>
+                <a class="ccna ccna1" href="https://www.linkedin.com/in/ramakrishna-bootla-7ba1b5338/">ramakrishna-bootla-7ba1b5338</a><br>
+                <h1 class="ccnt cnt-lft-2" >&#9993;  Mail</h1>
+                <a class="ccna ccna2" href="mailto:bootlaramakrsihna0@gmail.com">bootlaramakrishna0@gmail.com</a><br>
+                <h1 class="ccnt cnt-lft-3">&phone;  Phone</h1>
+                <h1 class="ccna ccna3" >+91 96031 25954</h1> <br>
+                <h1 class="ccnt cnt-lft-4" ><!-- GitHub logo -->
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 24 24" 
+                    width="24" height="24" 
+                    role="img" aria-label="GitHub" 
+                    fill="currentColor">
+                    <title>GitHub</title>
+                    <path d="M12 .297c-6.63 0-12 5.373-12 
+                    12 0 5.303 3.438 9.8 8.205 
+                    11.387.6.113.82-.258.82-.577 
+                    0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 
+                    17.07 3.633 16.7 3.633 16.7c-1.087-.744.084-.729.084-.729 
+                    1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 
+                    1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 
+                    0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 
+                    0 0 1.005-.322 3.3 1.23.96-.267 
+                    1.98-.399 3-.405 1.02.006 2.04.138 
+                    3 .405 2.28-1.552 3.285-1.23 
+                    3.285-1.23.645 1.653.24 2.873.12 
+                    3.176.765.84 1.23 1.91 1.23 
+                    3.22 0 4.61-2.805 5.625-5.475 
+                    5.92.43.372.81 1.102.81 2.222 
+                    0 1.606-.015 2.896-.015 3.286 
+                    0 .315.21.69.825.57C20.565 22.092 
+                    24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                    GiHub</h1>
+                <a class="ccna ccna4" href="https://github.com/Ramakrishnabootla">Ramakrishnabootla</a>
+            </div>
+            <div class="cnt-right">
+                <div class="right-cont">
+                    <!--<h1 class="rght-txt1">Wanna collab</h1>-->
+                    <form action="mailto:bootlaramakrsihna0@gmail.com" class="cnt-form">
+                        <label for="name" class=" c1t name1">Name:
+                            <input type="text" name="name" id="name" class=" c1t name2" placeholder="Type Your Name">
+
+                        </label>
+                        <br>
+                        <label for="email" class="c1t email1">Email
+                            <input type="email" name="email" id="email" class=" c1t email2" placeholder="your@example.com">
+                        </label>
+                        
+                        <br>
+                        <label for="text1" class="c1t text1">Message: 
+                            <textarea name="iptext" rows="5" id="text1" class="c1t text2" placeholder="Hi, Rama I would Like to...."></textarea>
+
+                        </label>
+
+                        <button class="button-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+stylesheet
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:ital,wght@0,100..900;1,100..900&family=Genos:ital,wght@0,100..900;1,100..900&family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=WDXL+Lubrifont+TC&display=swap');
+body{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    margin: 0;
+}
+
+/*----------Header----------*/
+.head-main{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+   -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    border-radius: 0 0 20px 20px;
+    width: 93vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.header-left{
+    margin: 0%;
+
+    display: flex;
+    width: 23%;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Goldman", sans-serif;
+    letter-spacing: 0.5px;
+}
+.svg-logo{
+    height: 100px;
+    width: 100px;
+    padding: 0%;
+}
+.head-h1{
+    font-size: x-large;
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 2px;
+    margin-top: 5%;
+}
+
+
+
+.a-head{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/*---------Home-Content----------*/
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.home-text{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    text-align: left;
+}
+.home-text1{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+.home-text2{
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.my-img{
+    
+    border: 1px solid white;
+    width: 500px; height: 450px;
+    border-radius: 80%;
+}
+.home-img-div{
+    margin-top: 5%;
+}
+
+.home-text3{
+      font-family: "Genos", sans-serif;
+      font-weight: lighter;
+}
+.home-text4{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.home-text5{
+    width: 30%;
+    display: flex;
+    font-family:   "Exo", sans-serif;;
+    justify-content: space-around;
+}
+.GL{
+    padding: 5px;
+    font-size: 25px;
+    background-color: rgb(52, 53, 53);
+    color: white;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+.home-but1{
+    text-align: center;
+}
+.home-but2{
+    text-align: center;
+}
+.home-text6, .home-text7, .home-text8{
+
+    font-weight: lighter;
+    font-family:"Exo", sans-serif;;
+}
+
+
+/*--------education------*/
+
+.education{
+    height: 100vh;
+    background-color: rgb(37, 40, 40);
+}
+.main-txt{
+    padding-top: 100px;
+    margin-left: 100px;
+    font-family: "Goldman", sans-serif;
+    padding-bottom: 0px;
+}
+.edu-content{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 480px);
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+
+}
+
+.edu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 450px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    letter-spacing: 1px;
+}
+.ed1{
+    opacity: 90%;
+}
+.ed2{
+    font-weight: lighter;
+    font-size: 25px;
+    opacity: 75%;
+}
+.ed3{
+    font-weight: lighter;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+/*----Contact Me---------*/
+
+
+.contactme{
+    height: 100vh;
+}
+.left-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cnt-txt2{
+    opacity: 75%;
+    margin-left: 130px;
+    font-size: 35px;
+    font-weight: lighter;
+    font-family: "Genos", sans-serif;
+}
+
+.cnt-left{
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+.ccnt{
+    opacity: 90%;
+    font-family: "Goldman", sans-serif;
+    font-weight: lighter;
+}
+.ccna{
+    font-size: 25px;
+    opacity: 60%;
+    padding-left: 35px;
+    font-family: "Genos", sans-serif;
+    letter-spacing: 1px;
+}
+.cnt-right{
+    width: 50%;
+    font-family: "Genos", sans-serif;
+    letter-spacing: 1px;
+}
+.right-cont{
+    display: flex;
+    flex-direction: column;
+}
+.cnt-form{
+    border: 1px solid rgb(57, 57, 57);
+    width: 80%;
+    border-radius: 15px;
+}
+.c1t, input{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+    font-size: 19px;
+}
+
+input,textarea{
+    border: 1px solid rgb(57, 57, 57);
+    background: transparent;
+    border-radius: 10px;
+}
+.rght-txt1{
+    text-align: center;
+    width: 80%;
+}
+.button-submit{
+    border: none;
+    background-color: rgb(73, 121, 164);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-left: 40%;
+    font-family: "Genos", sans-serif;
+    color: white;
+    font-size: 20px;
+}
