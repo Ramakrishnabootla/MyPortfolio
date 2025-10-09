@@ -93,7 +93,6 @@ a.a-head:hover{
 .home-text{
   flex:1 1 380px;
   max-width:65ch;
-  padding-left: 80px;
 }
 
 .home-text1{ font-size:clamp(1.25rem, 3.6vw, 2rem); font-weight:700; }
@@ -115,7 +114,7 @@ a.a-head:hover{
 .home-img-div{ flex:0 0 320px; display:flex; align-items:center; justify-content:center; }
 .my-img{
   width:min(450px, 40vw);
-  height:400px;
+  height:450px;
   border:1px solid rgba(255,255,255,0.12);
   border-radius:50%;
   object-fit:cover;
@@ -382,7 +381,7 @@ input,textarea{ background:transparent; border:1px solid rgba(255,255,255,0.08);
   .edu-content{ grid-template-columns:1fr; }
   .svg-logo{ width:40px; height:40px; }
   .head-h1{ font-size:1rem; }
-  .my-img{ width:44vw; max-width:220px; }
+  .my-img{ width:74vw; max-width:220px; height: 250px; border-radius: 10%;}
   .home{ padding-top:6.5rem; }
   .project-grid{ grid-template-columns: 1fr; gap:0.85rem; }
 }
