@@ -246,7 +246,7 @@ a.a-head:hover{
 
 /* Know More button */
 .know-more {
-  align-self:flex-start;
+  align-self:flex-end;
   padding:0.5rem 0.8rem;
   border-radius:8px;
   border:none;
