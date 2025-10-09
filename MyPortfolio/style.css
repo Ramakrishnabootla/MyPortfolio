@@ -99,6 +99,8 @@ a.a-head:hover{
 .home-text{
   flex:1 1 380px;
   max-width:65ch;
+  margin-left: 80px;
+
 }
 
 .home-text1{ font-size:clamp(1.25rem, 3.6vw, 2rem); font-weight:700; }
@@ -382,8 +384,8 @@ input,textarea{ background:transparent; border:1px solid rgba(255,255,255,0.08);
   .left-right{ flex-direction:column; }
   .cnt-left{ width:100%; }
   .cnt-right{ width:100%; }
-
-  .home-text{ text-align:center; }
+  .my-img{border-radius: 15%; width: 90%;}
+  .home-text{ text-align:center; margin-left: 0;}
   .project-grid{ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 }
 
@@ -393,6 +395,7 @@ input,textarea{ background:transparent; border:1px solid rgba(255,255,255,0.08);
   - Further reduces font sizes, image sizes and converts layouts to a single column.
 */
 @media (max-width: 600px){
+  .home-text{margin-left: 0;}
   .head-main{ padding:0.6rem 3%; }
   .home-text2{ font-size:clamp(1.2rem,6vw,1.6rem); }
   .GL{ font-size:0.95rem; padding:0.5rem 0.75rem; }
