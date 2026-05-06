@@ -601,8 +601,10 @@ h1, h2, h3 {
    ============================================ */
 
 .contactme {
-  background: var(--bg-dark);
-  padding: 6rem 6%;
+  background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(10, 10, 20, 0.9) 100%);
+  padding: 6rem 6% 8rem;
+  margin-top: 4rem;
+  border-top: 2px solid var(--border-light);
 }
 
 .cnt--head-text1 {
@@ -620,35 +622,70 @@ h1, h2, h3 {
 
 .left-right {
   display: flex;
-  gap: 3rem;
-  align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .cnt-left {
-  flex: 0 0 320px;
-  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--card-bg) 0%, rgba(26, 29, 53, 0.8) 100%);
+  border: 2px solid var(--border-light);
+  border-radius: 20px;
+  padding: 3.5rem 3rem;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 15px 50px rgba(59, 130, 246, 0.15);
+  transition: all 0.35s cubic-bezier(0.28, 0.84, 0.42, 1);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 12px;
+  background: rgba(15, 15, 30, 0.3);
+  transition: all 0.3s ease;
+  min-height: 180px;
+}
+
+.contact-item:hover {
+  background: rgba(59, 130, 246, 0.08);
+  border-color: var(--accent);
+  transform: translateY(-5px);
+}
+
+.cnt-left:hover {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, var(--card-hover) 0%, rgba(59, 130, 246, 0.08) 100%);
+  box-shadow: var(--shadow-lg), 0 0 30px rgba(59, 130, 246, 0.2);
+  transform: translateY(-8px);
 }
 
 .ccnt {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   font-family: Goldman, sans-serif;
   color: var(--accent-light);
-  margin-bottom: 0.5rem;
-  margin-top: 1.5rem;
-}
-
-.ccnt:first-child {
-  margin-top: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .ccna {
   display: block;
   color: var(--text-secondary);
-  margin-bottom: 1rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   word-break: break-word;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0;
 }
 
 .ccna:hover {
@@ -748,6 +785,10 @@ textarea {
   .left-right {
     gap: 2rem;
   }
+
+  .cnt-left {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -828,12 +869,14 @@ textarea {
   }
 
   .left-right {
-    flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
   }
 
   .cnt-left {
-    padding: 0;
+    padding: 2rem;
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
   .cnt-form {
@@ -875,6 +918,16 @@ textarea {
 
   .cnt-form {
     padding: 1.2rem;
+  }
+
+  .cnt-left {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .contact-item {
+    padding: 1rem;
   }
 
   .project-modal__panel {
