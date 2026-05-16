@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #00040f;
+  --secondary: #82E8EB;
+  --dim-white: rgba(255, 255, 255, 0.72);
+  --dim-blue: rgba(9, 151, 124, 0.12);
+  --card-shadow: 0px 25px 120px -35px rgba(0, 238, 255, 0.18);
+  --glass: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at 10% 10%, rgba(0, 246, 255, 0.16), transparent 30%),
+    radial-gradient(circle at 90% 10%, rgba(0, 246, 255, 0.08), transparent 22%),
+    linear-gradient(180deg, #02040f 0%, #050b18 100%);
+  color: #ffffff;
+}
+
+/* Prevent horizontal scroll caused by overflow */
+html, body, #root {
+  overflow-x: hidden;
+}
+
+body::selection {
+  background: rgba(130, 232, 235, 0.35);
+}
+
+::selection {
+  background: rgba(130, 232, 235, 0.35);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(130, 232, 235, 0.42);
+  border-radius: 9999px;
+  border: 3px solid rgba(0, 4, 15, 0.5);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #00f6ff 0%, #82e8eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(135deg, rgba(0, 246, 255, 0.18), rgba(130, 232, 235, 0.22));
+}
+
+.bg-black-gradient {
+  background: linear-gradient(180deg, rgba(7, 9, 16, 0.9), rgba(2, 4, 15, 0.8));
+}
+
+.box-shadow {
+  box-shadow: var(--card-shadow);
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(130, 232, 235, 0.24);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-flex;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 110px;
+  background-color: rgba(7, 9, 16, 0.95);
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 10;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@layer utilities {
+  .nav-styles {
+    @apply w-full fixed top-0 left-0 flex justify-center items-center bg-primary/80 backdrop-blur-xl border-b border-white/10 z-50;
+  }
+  .glass-card {
+    @apply bg-white/5 border border-white/10 backdrop-blur-xl rounded-[24px] shadow-2xl;
+  }
+  .section-heading {
+    @apply font-poppins font-semibold text-white;
+  }
+}
