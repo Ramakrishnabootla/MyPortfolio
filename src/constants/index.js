@@ -8,6 +8,8 @@ import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
+  FaDatabase,
+  FaNodeJs,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -19,6 +21,7 @@ import {
   SiN8N,
   SiStreamlit,
   SiGnubash,
+  SiMysql,
 } from "react-icons/si";
 
 export const navLinks = [
@@ -80,7 +83,7 @@ export const callToAction = "https://www.linkedin.com/in/ramakrishna-bootla-7ba1
 
 export const skills = [
   {
-    title: "Programming Languages",
+    title: "Programming & Backend",
     items: [
       {
         id: "java",
@@ -98,20 +101,15 @@ export const skills = [
         name: "JavaScript",
       },
       {
-        id: "html",
-        icon: SiHtml5,
-        name: "HTML5",
+        id: "node",
+        icon: FaNodeJs,
+        name: "Node.js",
       },
       {
-        id: "css",
-        icon: SiCsswizardry,
-        name: "CSS3",
+        id: "express",
+        icon: FaNodeJs,
+        name: "Express",
       },
-    ],
-  },
-  {
-    title: "Frameworks & Libraries",
-    items: [
       {
         id: "react",
         icon: FaReact,
@@ -122,15 +120,35 @@ export const skills = [
         icon: SiTailwindcss,
         name: "Tailwind CSS",
       },
+    ],
+  },
+  {
+    title: "Databases",
+    items: [
       {
-        id: "streamlit",
-        icon: SiStreamlit,
-        name: "Streamlit",
+        id: "sql",
+        icon: FaDatabase,
+        name: "SQL",
+      },
+      {
+        id: "nosql",
+        icon: FaDatabase,
+        name: "NoSQL",
+      },
+      {
+        id: "mysql",
+        icon: SiMysql,
+        name: "MySQL",
+      },
+      {
+        id: "mongodb",
+        icon: SiMongodb,
+        name: "MongoDB",
       },
     ],
   },
   {
-    title: "Tools & Technologies",
+    title: "Tools",
     items: [
       {
         id: "git",
@@ -143,19 +161,9 @@ export const skills = [
         name: "GitHub",
       },
       {
-        id: "mongodb",
-        icon: SiMongodb,
-        name: "MongoDB",
-      },
-      {
-        id: "postgresql",
-        icon: SiPostgresql,
-        name: "PostgreSQL",
-      },
-      {
         id: "n8n",
         icon: SiN8N,
-        name: "N8N Automation",
+        name: "N8N",
       },
       {
         id: "bash",
@@ -248,15 +256,6 @@ export const educationList = [
     content1: "ST. VINCENT PALLOTTI SCHOOL",
     content2: "",
   },
-  {
-    id: "courses",
-    icon: "",
-    title: "Technical Courses",
-    degree: "Self-paced & Online Learning",
-    duration: "Ongoing",
-    content1: "HTML, CSS, React, Java, Python, Data Structures, N8N Automation",
-    content2: "",
-  },
 ];
 
 export const achievements = [
@@ -331,22 +330,28 @@ export const projects = [
   {
     id: "p-blue-collar",
     title: "Blue Collar - Field Workforce App",
-    github: "",
-    link: "",
+    github: "https://github.com/Ramakrishnabootla",
+    link: "https://bluecollarworkers.vercel.app",
+    knowMore: true,
     image: "/images/project-blue-collar.png",
     content: "Mobile-first workforce management app for blue-collar teams with attendance, task assignment, and offline sync",
+    details:
+      "Designed to streamline field workforce operations with offline support, task management, and attendance tracking for mobile teams.",
     stack: [
       { id: "react", icon: FaReact, name: "React" },
-      { id: "node", icon: FaJava, name: "Node/Java" },
+      { id: "node", icon: FaNodeJs, name: "Node.js" },
     ],
   },
   {
     id: "p-voice-agent",
     title: "Voice Agent - Conversational Voice Assistant",
-    github: "",
+    github: "https://github.com/Ramakrishnabootla",
     link: "",
+    knowMore: true,
     image: "/images/project-voice-agent.png",
     content: "Voice-enabled agent integrating speech-to-text and TTS for customer support workflows",
+    details:
+      "Built a voice-first assistant that routes customer requests using speech recognition and natural language response flows.",
     stack: [
       { id: "python", icon: FaPython, name: "Python" },
       { id: "streamlit", icon: SiStreamlit, name: "Streamlit" },
@@ -357,8 +362,11 @@ export const projects = [
     title: "Chatbot - CMRTC / WhatsApp Integration",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
+    knowMore: true,
     image: "/images/project-chatbot.png",
     content: "Chatbot systems built for CMRTC and WhatsApp with intent routing and automated responses",
+    details:
+      "Created a hybrid chatbot that handles both website and WhatsApp conversations with intent-based routing and fallback flows.",
     stack: [
       { id: "python", icon: FaPython, name: "Python" },
       { id: "n8n", icon: SiN8N, name: "n8n" },
@@ -369,7 +377,7 @@ export const projects = [
     title: "CMRTC College Support Chatbot",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
-    image: "/images/pic.png",
+    image: "/images/project-cmrtc-chatbot.svg",
     content: "Full chatbot for CMRTC college site with Python backend and React frontend using NLP for intent routing",
     stack: [
       {
@@ -389,7 +397,7 @@ export const projects = [
     title: "Attendance Management System",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
-    image: "/images/pic.png",
+    image: "/images/project-attendance.svg",
     content: "Java-based attendance system with role-based access for admin/teacher/student with file-based storage",
     stack: [
       {
@@ -404,7 +412,7 @@ export const projects = [
     title: "Summer of AI 2025 - Multilingual Data App",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
-    image: "/images/pic.png",
+    image: "/images/project-summer-ai.svg",
     content: "Team-built Streamlit app for multilingual corpus collection with offline-first approach",
     stack: [
       {
@@ -424,7 +432,7 @@ export const projects = [
     title: "WhatsApp Health-Awareness Chatbot",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
-    image: "/images/pic.png",
+    image: "/images/project-whatsapp-health.svg",
     content: "Automated WhatsApp bot using n8n delivering health awareness with user flows and FAQ lookup",
     stack: [
       {
@@ -439,7 +447,7 @@ export const projects = [
     title: "Daily Email Newsletter Automation",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
-    image: "/images/pic.png",
+    image: "/images/project-newsletter.svg",
     content: "End-to-end automation aggregating content and scheduling daily newsletter sends",
     stack: [
       {
@@ -454,7 +462,7 @@ export const projects = [
     title: "Form → Email Automation",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
-    image: "/images/pic.png",
+    image: "/images/project-form-email.svg",
     content: "Reliable automation for personalized confirmations and admin notifications with CSV exports",
     stack: [
       {

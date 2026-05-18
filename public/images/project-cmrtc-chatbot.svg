@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#grad)" rx="40" />
+  <rect x="40" y="40" width="520" height="320" rx="30" fill="#111827" opacity="0.8" />
+  <text x="50%" y="38%" fill="#7dd3fc" font-family="Inter, sans-serif" font-size="38" font-weight="700" text-anchor="middle">CMRTC Chatbot</text>
+  <text x="50%" y="56%" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="20" text-anchor="middle">NLP + React + Python</text>
+  <rect x="110" y="250" width="380" height="12" rx="6" fill="#22d3ee" opacity="0.75" />
+</svg>

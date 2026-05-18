@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+*.md
+
+changes_requested.md
+code.txt
+relevent_information_of_ME.md

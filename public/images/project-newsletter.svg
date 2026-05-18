@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#grad5)" rx="40" />
+  <rect x="100" y="90" width="400" height="220" rx="24" fill="#111827" />
+  <path d="M140 140h320M140 180h320M140 220h320" stroke="#38bdf8" stroke-width="12" stroke-linecap="round" />
+  <text x="50%" y="310" fill="#7dd3fc" font-family="Inter, sans-serif" font-size="34" font-weight="700" text-anchor="middle">Newsletter</text>
+  <text x="50%" y="348" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="18" text-anchor="middle">Email automation</text>
+</svg>

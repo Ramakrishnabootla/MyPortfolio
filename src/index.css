@@ -26,14 +26,154 @@ body {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at 10% 10%, rgba(0, 246, 255, 0.16), transparent 30%),
-    radial-gradient(circle at 90% 10%, rgba(0, 246, 255, 0.08), transparent 22%),
-    linear-gradient(180deg, #02040f 0%, #050b18 100%);
-  color: #ffffff;
+  background: var(--bg-page);
+  color: var(--text-primary);
 }
 
-/* Prevent horizontal scroll caused by overflow */
-html, body, #root {
+:root {
+  --bg-page: #02040f;
+  --bg-section: rgba(2, 4, 15, 0.95);
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-card-strong: rgba(255, 255, 255, 0.06);
+  --text-primary: #ffffff;
+  --text-secondary: #82E8EB;
+  --text-muted: rgba(255, 255, 255, 0.72);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --shadow-color: 0 30px 90px rgba(0, 246, 255, 0.14);
+  --surface-blur: rgba(255, 255, 255, 0.04);
+  --accent: #82e8eb;
+}
+
+.light {
+  --bg-page: #f6efe4;
+  --bg-section: rgba(255, 255, 255, 0.96);
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-card-strong: rgba(255, 255, 255, 1);
+  --text-primary: #1f2937;
+  --text-secondary: #4f5a6f;
+  --text-muted: #6b7280;
+  --border-color: rgba(148, 163, 184, 0.24);
+  --shadow-color: 0 30px 90px rgba(79, 70, 229, 0.08);
+  --surface-blur: rgba(255, 255, 255, 0.8);
+  --accent: #5b8bf9;
+}
+
+.bg-theme {
+  background: var(--bg-page) !important;
+}
+
+.text-theme {
+  color: var(--text-primary) !important;
+}
+
+.bg-card {
+  background: var(--bg-card) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.light .bg-primary {
+  background-color: var(--bg-page) !important;
+}
+
+.light .bg-primary\/80 {
+  background-color: rgba(246, 239, 228, 0.8) !important;
+}
+
+.light .bg-primary\/90 {
+  background-color: rgba(246, 239, 228, 0.9) !important;
+}
+
+.light .bg-primary\/95 {
+  background-color: rgba(246, 239, 228, 0.95) !important;
+}
+
+.light .bg-white\/5 {
+  background-color: rgba(255, 255, 255, 0.72) !important;
+}
+
+.light .text-white {
+  color: var(--text-primary) !important;
+}
+
+.light .text-dimWhite {
+  color: var(--text-muted) !important;
+}
+
+.light .text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.light .border-white\/10 {
+  border-color: rgba(148, 163, 184, 0.24) !important;
+}
+
+.light .border-secondary\/20 {
+  border-color: rgba(93, 147, 244, 0.2) !important;
+}
+
+.light .nav-styles {
+  background: rgba(246, 239, 228, 0.88) !important;
+}
+
+.light .bg-black-gradient {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 239, 228, 0.95));
+}
+
+.light .bg-blue-gradient {
+  background: linear-gradient(135deg, rgba(93, 147, 249, 0.12), rgba(205, 219, 255, 0.18));
+}
+
+.light .box-shadow {
+  box-shadow: var(--shadow-color) !important;
+}
+
+.light .feature-card {
+  background: var(--bg-card) !important;
+  border-color: var(--border-color) !important;
+}
+
+.light .feature-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-color: rgba(93, 147, 244, 0.28) !important;
+}
+
+.light .bg-black\/60 {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.light .bg-black\/80 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.light .bg-white {
+  background-color: #ffffff !important;
+}
+
+.light .text-accent-light {
+  color: #2563eb !important;
+}
+
+.light .bg-accent\/15 {
+  background-color: rgba(93, 147, 244, 0.15) !important;
+}
+
+.light .border-accent\/20 {
+  border-color: rgba(93, 147, 244, 0.2) !important;
+}
+
+.light .hover\:bg-white\/10:hover {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.light .shadow-2xl {
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08) !important;
+}
+
+html {
   overflow-x: hidden;
 }
 

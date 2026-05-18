@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../style";
 import { aboutMe } from "../constants";
 import LetsConnect from "./LetsConnect";
 
 const Hero = () => {
+  const typingPhrases = ["Hi there!", "Hello!", "Welcome!"];
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [letterIndex, setLetterIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentPhrase = typingPhrases[phraseIndex];
+    const timer = setTimeout(() => {
+      if (!isDeleting && letterIndex === currentPhrase.length) {
+        setIsDeleting(true);
+        return;
+      }
+
+      if (isDeleting && letterIndex === 0) {
+        setIsDeleting(false);
+        setPhraseIndex((prev) => (prev + 1) % typingPhrases.length);
+        return;
+      }
+
+      setLetterIndex((prev) => prev + (isDeleting ? -1 : 1));
+    }, isDeleting ? 130 : 180);
+
+    return () => clearTimeout(timer);
+  }, [letterIndex, phraseIndex, isDeleting]);
+
+  const displayText = typingPhrases[phraseIndex].substring(0, letterIndex);
+
   return (
     <section id="home" className={`${styles.paddingX} ${styles.paddingY} pt-[40px]`}>
       <div className={`${styles.flexCenter}`}>
@@ -19,7 +46,8 @@ const Hero = () => {
         {/* Hero text */}
         <div className="flex flex-row items-center w-full text-white">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]">
-            Hi there!
+            <span>{displayText}</span>
+            <span className="inline-block ml-2 h-[1.1em] w-[2px] rounded-sm bg-secondary animate-pulse" />
             <br className="sm:block hidden" /> I am
           </h1>
         </div>
@@ -36,10 +64,6 @@ const Hero = () => {
         </p>
       </motion.div>
 
-          <div className="flex justify-center items-center w-full md:flex-none md:max-w-[141px]">
-            <LetsConnect />
-          </div>
-
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -47,12 +71,15 @@ const Hero = () => {
             viewport={{ once: true }}
             className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
           >
-            <div className="relative z-10 h-[90%] w-[85%] flex items-center justify-center">
+            <div className="relative z-10 h-[90%] w-[85%] flex flex-col items-center justify-center">
               <img
                 src="/images/pic.png"
                 alt="Profile"
                 className="w-[70%] h-auto object-cover rounded-[20px] box-shadow"
               />
+              <div className="mt-8">
+                <LetsConnect />
+              </div>
             </div>
             <div className="absolute z-[1] w-[50%] h-[50%] rounded-full bottom-40 white__gradient"></div>
           </motion.div>

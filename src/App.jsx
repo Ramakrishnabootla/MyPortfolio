@@ -20,7 +20,7 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-primary text-white font-poppins">
+    <div className="min-h-screen bg-theme text-theme font-poppins">
       {/* Navbar visible at all times (sticky) */}
       <Navbar />
 
@@ -34,13 +34,13 @@ function App() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.45 }}
-            className="pt-[100px]"
+            className="pt-[10px]"
           >
             <Hero />
             <SkillsAndExperience />
             <Education />
-            <Achievements />
             <Projects />
+            <Achievements />
             <Contact />
             <Footer />
           </motion.main>

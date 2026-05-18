@@ -26,7 +26,7 @@ const Education = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                 viewport={{ once: true }}
-                className="feature-card p-8 rounded-[20px] border border-white/10 hover:border-secondary/30"
+                className={`feature-card p-8 rounded-[20px] border border-white/10 hover:border-secondary/30 ${idx === educationList.length - 1 ? "md:col-start-2" : ""}`}
               >
                 <div className="flex flex-col">
                   <h3 className="font-poppins font-semibold text-[24px] text-white mb-2">
