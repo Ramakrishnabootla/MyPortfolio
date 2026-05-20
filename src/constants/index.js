@@ -178,7 +178,7 @@ export const experiences = [
   
   {
     organisation: "Hexart.In",
-    logo: "dist/images/hexart-logo.png",
+    logo: "/images/hexart-logo.png",
     link: "https://hexart.in",
     positions: [
       {
@@ -203,7 +203,7 @@ export const experiences = [
   },
   {
     organisation: "Viswam.AI",
-    logo: "dist/images/viswam-logo.png",
+    logo: "/images/viswam-logo.png",
     link: "https://viswam.ai",
     positions: [
       {
@@ -333,7 +333,7 @@ export const projects = [
     github: "https://github.com/Ramakrishnabootla",
     link: "https://bluecollarworkers.vercel.app",
     knowMore: true,
-    image: "dist/images/project-blue-collar.png",
+    image: "/images/project-blue-collar.png",
     content: "Mobile-first workforce management app for blue-collar teams with attendance, task assignment, and offline sync",
     details:
       "Designed to streamline field workforce operations with offline support, task management, and attendance tracking for mobile teams.",
@@ -348,7 +348,7 @@ export const projects = [
     github: "https://github.com/Ramakrishnabootla",
     link: "",
     knowMore: true,
-    image: "dist/images/project-voice-agent.png",
+    image: "/images/project-voice-agent.png",
     content: "Voice-enabled agent integrating speech-to-text and TTS for customer support workflows",
     details:
       "Built a voice-first assistant that routes customer requests using speech recognition and natural language response flows.",
@@ -362,7 +362,7 @@ export const projects = [
     title: "CMRTC College Support Chatbot",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
-    image: "dist/images/project-cmrtc-chatbot.png",
+    image: "/images/project-cmrtc-chatbot.png",
     content: "Full chatbot for CMRTC college site with Python backend and React frontend using NLP for intent routing",
     stack: [
       {
@@ -383,7 +383,7 @@ export const projects = [
     title: "WhatsApp Health-Awareness Chatbot",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
-    image: "dist/images/project-whatsapp-chatbot.png",
+    image: "/images/project-whatsapp-chatbot.png",
     content: "Automated WhatsApp bot using n8n delivering health awareness with user flows and FAQ lookup",
     stack: [
       {
