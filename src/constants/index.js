@@ -178,7 +178,7 @@ export const experiences = [
   
   {
     organisation: "Hexart.In",
-    logo: "/images/hexart-logo.png",
+    logo: "dist/images/hexart-logo.png",
     link: "https://hexart.in",
     positions: [
       {
@@ -203,7 +203,7 @@ export const experiences = [
   },
   {
     organisation: "Viswam.AI",
-    logo: "/images/viswam-logo.png",
+    logo: "dist/images/viswam-logo.png",
     link: "https://viswam.ai",
     positions: [
       {
@@ -333,7 +333,7 @@ export const projects = [
     github: "https://github.com/Ramakrishnabootla",
     link: "https://bluecollarworkers.vercel.app",
     knowMore: true,
-    image: "/images/project-blue-collar.png",
+    image: "dist/images/project-blue-collar.png",
     content: "Mobile-first workforce management app for blue-collar teams with attendance, task assignment, and offline sync",
     details:
       "Designed to streamline field workforce operations with offline support, task management, and attendance tracking for mobile teams.",
@@ -348,7 +348,7 @@ export const projects = [
     github: "https://github.com/Ramakrishnabootla",
     link: "",
     knowMore: true,
-    image: "/images/project-voice-agent.png",
+    image: "dist/images/project-voice-agent.png",
     content: "Voice-enabled agent integrating speech-to-text and TTS for customer support workflows",
     details:
       "Built a voice-first assistant that routes customer requests using speech recognition and natural language response flows.",
@@ -359,25 +359,10 @@ export const projects = [
   },
   {
     id: "p-chatbot",
-    title: "Chatbot - CMRTC / WhatsApp Integration",
-    github: "https://github.com/Ramakrishnabootla",
-    link: "",
-    knowMore: true,
-    image: "/images/project-chatbot.png",
-    content: "Chatbot systems built for CMRTC and WhatsApp with intent routing and automated responses",
-    details:
-      "Created a hybrid chatbot that handles both website and WhatsApp conversations with intent-based routing and fallback flows.",
-    stack: [
-      { id: "python", icon: FaPython, name: "Python" },
-      { id: "n8n", icon: SiN8N, name: "n8n" },
-    ],
-  },
-  {
-    id: "1",
     title: "CMRTC College Support Chatbot",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
-    image: "/images/project-cmrtc-chatbot.svg",
+    image: "dist/images/project-cmrtc-chatbot.png",
     content: "Full chatbot for CMRTC college site with Python backend and React frontend using NLP for intent routing",
     stack: [
       {
@@ -391,48 +376,14 @@ export const projects = [
         name: "React",
       },
     ],
-  },
-  {
-    id: "2",
-    title: "Attendance Management System",
-    github: "https://github.com/Ramakrishnabootla",
-    link: "",
-    image: "/images/project-attendance.svg",
-    content: "Java-based attendance system with role-based access for admin/teacher/student with file-based storage",
-    stack: [
-      {
-        id: "java",
-        icon: FaJava,
-        name: "Java",
-      },
-    ],
-  },
-  {
-    id: "3",
-    title: "Summer of AI 2025 - Multilingual Data App",
-    github: "https://github.com/Ramakrishnabootla",
-    link: "",
-    image: "/images/project-summer-ai.svg",
-    content: "Team-built Streamlit app for multilingual corpus collection with offline-first approach",
-    stack: [
-      {
-        id: "streamlit",
-        icon: SiStreamlit,
-        name: "Streamlit",
-      },
-      {
-        id: "python",
-        icon: FaPython,
-        name: "Python",
-      },
-    ],
-  },
+  }, 
+  
   {
     id: "4",
     title: "WhatsApp Health-Awareness Chatbot",
     github: "https://github.com/Ramakrishnabootla",
     link: "",
-    image: "/images/project-whatsapp-health.svg",
+    image: "dist/images/project-whatsapp-chatbot.png",
     content: "Automated WhatsApp bot using n8n delivering health awareness with user flows and FAQ lookup",
     stack: [
       {
@@ -469,6 +420,41 @@ export const projects = [
         id: "n8n",
         icon: SiN8N,
         name: "N8N",
+      },
+    ],
+  },
+  {
+    id: "2",
+    title: "Attendance Management System",
+    github: "https://github.com/Ramakrishnabootla",
+    link: "",
+    image: "/images/project-attendance.svg",
+    content: "Java-based attendance system with role-based access for admin/teacher/student with file-based storage",
+    stack: [
+      {
+        id: "java",
+        icon: FaJava,
+        name: "Java",
+      },
+    ],
+  },
+  {
+    id: "3",
+    title: "Summer of AI 2025 - Multilingual Data App",
+    github: "https://github.com/Ramakrishnabootla",
+    link: "",
+    image: "/images/project-summer-ai.svg",
+    content: "Team-built Streamlit app for multilingual corpus collection with offline-first approach",
+    stack: [
+      {
+        id: "streamlit",
+        icon: SiStreamlit,
+        name: "Streamlit",
+      },
+      {
+        id: "python",
+        icon: FaPython,
+        name: "Python",
       },
     ],
   },
